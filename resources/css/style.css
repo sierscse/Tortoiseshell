@@ -1,0 +1,149 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.banner {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  height: 31rem;
+}
+
+header {
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+}
+
+.logo-white{
+  display: flex;
+  align-items: center;
+}
+
+.logo-white img {
+  height: 1.5rem;
+  margin-right: 1em;
+}
+
+nav span {
+  padding: 0 1rem;
+}
+
+nav span:last-child {
+  padding-right: 0;
+}
+
+.motto {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+}
+
+.motto span {
+  background-color: white;
+  color: black;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 8rem;
+  margin: 3rem auto;
+  width: 25rem;
+
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+#exam {
+  margin-right: 6rem;
+
+}
+#exam img {
+  width: 3.5rem;
+}
+
+#fitting img {
+  width: 5rem;
+
+}
+
+#delivery {
+  margin-left: 6rem;
+}
+
+#delivery img {
+  width: 5rem;
+  height: auto;
+}
+
+/* NOTE: very close! need to reposition a bit in relation to other elements */
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.info span {
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.info p {
+  margin-top: 1rem;
+}
+
+
+footer {
+  background-color: azure;
+  color: black;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
