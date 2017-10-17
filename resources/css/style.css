@@ -46,6 +46,10 @@ nav span:last-child {
   padding-right: 0;
 }
 
+nav.mobile {
+  display: none;
+}
+
 .motto {
   display: flex;
   justify-content: flex-end;
@@ -53,6 +57,8 @@ nav span:last-child {
   top: 10rem;
   left: 2rem;
 }
+/* NOTE: there is probably a better way to style this but I struggled with
+it so for now I left it here */
 
 .motto span {
   background-color: white;
@@ -178,4 +184,81 @@ footer img {
   .services {
     justify-content: center;
   }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .banner nav {
+    display: none;
+  }
+
+  nav.mobile {
+    display: inline;
+  }
+
+  .motto {
+    display: block;
+    position: static;
+    margin-top: 9rem;
+  }
+
+  .motto span {
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 3.77rem auto;
+  }
+
+  .services .mobile {
+    margin-bottom: 1.54rem;
+    width: 100%;
+  }
+
+  .services .mobile:last-child {
+    margin-bottom: 0;
+  }
+
+  .mobile span {
+    padding: 1rem;
+  }
+
+  #delivery {
+    margin-left: 0;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .info {
+    width: auto;
+    margin: auto;
+  }
+
+  .info span {
+    width: auto;
+    text-align: center;
+  }
+
+  .info p {
+    margin-right: 1rem;
+    margin-left: .25rem;
+  }
+
+  .info:first-child p {
+    margin-bottom: 4rem;
+  }
+
+
 }
