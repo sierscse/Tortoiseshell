@@ -50,17 +50,17 @@ nav.mobile {
   display: none;
 }
 
-.motto {
+.flex {
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  top: 10rem;
-  left: 2rem;
 }
-/* NOTE: there is probably a better way to style this but I struggled with
-it so for now I left it here */
 
-.motto span {
+.motto {
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+  padding: 0.75rem 5rem;
   background-color: white;
   color: black;
   padding: 1.5rem 5rem;
@@ -78,7 +78,6 @@ it so for now I left it here */
   width: 25rem;
 
 }
-
 
 .flex-column {
   display: flex;
@@ -168,17 +167,14 @@ footer img {
     position: relative;
     top: 0;
   }
-  .motto {
-    display: inline;
-    position: relative;
-    top: 5rem;
-    left: 17rem;
-  }
-  /* NOTE: above doesn't seem quite right, but it's close */
 
-  .motto span {
-    padding: 0.75rem 4rem;
+  .motto {
+    display: inline-block;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 5rem;
     font-size: 1.33rem;
+    font-weight: bold;
   }
 
   .services {
@@ -202,16 +198,14 @@ footer img {
   }
 
   .motto {
-    display: block;
-    position: static;
+    width: 100%;
+    margin: auto;
     margin-top: 9rem;
+    padding: 1rem auto;
+    text-align: center;
+    font-size: 1rem;
   }
 
-  .motto span {
-    display: block;
-    padding: 1rem 0;
-    text-align: center;
-  }
 
   .services {
     display: flex;
